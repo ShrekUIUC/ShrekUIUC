@@ -1,0 +1,237 @@
+/* style.css
+:root {
+    --primary-color: #4CAF50;
+    --background-color: #f0f0f0;
+    --text-color: #333;
+    --font-family: Arial, sans-serif;
+    --box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+body {
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: var(--box-shadow);
+    border-radius: 10px;
+}
+
+.header {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+.section {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+}
+
+.section h2 {
+    color: var(--primary-color);
+    margin-top: 0;
+    font-size: 1.5em;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #3e8e41;
+}
+
+/* Responsive design */
+/* @media (max-width: 768px) {
+    .container {
+        max-width: 600px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        max-width: 400px;
+    }
+    .header h1 {
+        font-size: 1.5em;
+    }
+    .section h2 {
+        font-size: 1.2em;
+    }
+}
+
+
+.expanded {
+    display: block;
+}
+
+.section:not(.expanded) ul {
+    display: none;
+}  */
+:root {
+    --primary-color: #3D52A0;
+    --secondary-color: #7091E6;
+    --background-color: #EDE8F5;
+    --text-color: #333;
+    --font-family: 'Helvetica Neue', sans-serif;
+    --box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: var(--box-shadow);
+    border-radius: 10px;
+}
+
+.header {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2.5em; 
+}
+
+.section {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+    max-width: 750px; /* Restrict width */
+    margin-left: auto; /* Center sections */
+    margin-right: auto; /* Center sections */
+}
+
+.section h2 {
+    color: var(--primary-color);
+    margin-top: 0;
+}
+
+ul {
+    list-style-type: none; 
+    padding-left: 20px; 
+}
+
+li {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+a {
+    color: var(--secondary-color); 
+    text-decoration: none;
+}
+
+a:hover {
+    color: #8697C4; 
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+   .container, .section {
+        max-width: 90%; /* Adjust for smaller screens */
+        padding-left: 15px; 
+        padding-right: 15px;
+   }
+}
+
+@media (max-width: 480px) {
+   .container, .section {
+        max-width: 95%; /* Further adjust for very small screens */
+        padding-left: 10px; 
+        padding-right: 10px;
+   }
+    
+   .header h1 {
+       font-size: 2em; 
+   }
+    
+   .section h2 {
+       font-size: 1.5em; 
+   }
+}
+
+button {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+   background-color:#3e8e41
+}
+
+.expanded{
+   display:block
+}
+
+.section:not(.expanded) ul{
+   display:none
+}
+

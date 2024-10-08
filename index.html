@@ -1,10 +1,194 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <title>This is the title of the webpage!</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shreyas Sachin Kulkarni</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- this is just a comment for IS445 Fall 2024 BCU/BCG -->
-    <p>This is an example paragraph for Fa2024-ID9504. Anything in the <strong>body</strong> tag will appear on the page, just like this <strong>p</strong> tag and its contents.</p>
+    <div class="container">
+      <div class="header">
+        <h1>Shreyas Sachin Kulkarni</h1>
+        <p>
+          304 E Daniel, Champaign, Illinois, 61820 |
+          <a style="color:rgb(141, 184, 228)" href="mailto:ssk16@illinois.edu">ssk16@illinois.edu</a> |
+          (217)866-6174
+        </p>
+        <p>
+          <a style="color:rgb(141, 184, 228)" href="https://www.linkedin.com/in/shreyaskulkarni29/"
+            >linkedin.com/in/shreyaskulkarni29</a
+          >
+          |
+          <a style="color:rgb(141, 184, 228)" href="https://github.com/SHREYAS290601"
+            >github.com/SHREYAS290601</a
+          >
+        </p>
+        <button id="printButton">Print Resume</button>
+      </div>
+      </div>
+      <div class="section" style="margin-top: 20px;">
+        <h2>EDUCATION</h2>
+        <ul>
+          <li>
+            Masters of Science In Information Science: Information Management -
+            2024 to 2026, University of Illinois at Urbana-Champaign
+          </li>
+          <li>
+              <p>
+                  Bachelor of Engineering: Computer Engineering with <span style="font-style: italic;">Honors</span> in Data
+                  Science - 2019 to 2023, Marathwada Mitra Mandal's Cullege of
+                  Engineering (MMCOE); Savitribai Phule Pune University
+                </p>
+                <p>
+                    GPA: 9.44/10
+                </p>
+          </li>
+        </ul>
+      </div>
+      <div class="section">
+        <h2>COMPUTER SKILLS</h2>
+        <ul>
+          <li>Operating System: Windows, Linux</li>
+          <li>Languages: Python, HTML, CSS, C++(basic), SAS(beginner)</li>
+          <li>Database: PostgreSQL, MongoDB</li>
+          <li>Application Software: Google Sheets, PowerBI, Tableau</li>
+          <li>Cloud: Azure</li>
+        </ul>
+      </div>
+      <div class="section">
+        <h2>PROFESSIONAL/INTERNSHIP EXPERIENCE</h2>
+        <h3>Apptware (India, Pune September 2022 to June 2024)</h3>
+        <p>Associate Data Scientist</p>
+        <ul>
+          <li>
+            Quantum Mind 451 Project: Contributed to the development of the
+            "ingestion" backend using Django and GPT-4, analyzing web content
+            from over 500 links to generate summaries and actionable insights
+            for more than 20 clients, utilizing Pandas and NLP libraries.
+          </li>
+          <li>
+            IVR Project: Researched real-time IVR detection, comparing
+            custom-trained speech-to-text models from Nvidia and OpenAI,
+            enhancing output speed from 1s to 200 ms, and investigated vector
+            databases like Weaviate for NLP analysis of transcribed audio.
+          </li>
+          <li>
+            Fruit Counting Project: Designed and trained a YOLOv8 nano object
+            detection model on over 8000 images for real-time fruit counting in
+            camera settings, specifically targeting apples, oranges, and
+            mangoes.
+          </li>
+        </ul>
+        <h3>Datasmith.AI (India, Pune January 2022 to July 2022)</h3>
+        <p>Earth Data Science Intern</p>
+        <ul>
+          <li>
+            Investigated data cullection methods and learned 4 diverse
+            pre-processing techniques for enhancing satellite imagery analysis,
+            with a focus on NISAR data, to improve understanding and
+            interpretation of remote sensing data for crop detection and yield
+            prediction projects.
+          </li>
+          <li>
+            Developed and trained a YulOv5 object detection model for precise
+            crop prediction, acquiring skills in image-based data processing and
+            applying them to satellite imagery analysis for agricultural
+            applications.
+          </li>
+        </ul>
+      </div>
+      <div class="section">
+        <h2>PROJECTS</h2>
+        <h3>FINAL YEAR PROJECT (India, Pune January 2023 to June 2023)</h3>
+        <p>
+          Title: Prognosis of Cardiovascular diseases using chest radiographs
+        </p>
+        <ul>
+          <li>
+            Implemented YulO V5 for multi-class detection of 14 lung and heart
+            diseases, training on 15,000+ images extracted from 200GB DICOM
+            files, optimizing for high precision and recall metrics.
+          </li>
+          <li>
+            Engineered a high-performance backend using FastAPI, integrated with
+            React frontend, facilitating efficient data ingestion, real-time
+            disease inference, and intelligent doctor recommendation algorithms.
+          </li>
+        </ul>
+        <h3>MINOR PROJECTS</h3>
+        <h4>
+          Microservices (India, Pune January 2023)
+        </h4>
+        <p>
+            Title: Microservice based Video to MP3 convert
+        </p>
+        <ul>
+          <li>
+            Developed a Flask-MongoDB application orchestrated via Kubernetes
+            (k8s) on Minikube, implementing RabbitMQ for efficient message
+            handling and asynchronous processing of user-uploaded videos, with
+            email notification triggers.
+          </li>
+          <li>
+            Constructed a 4 body microservices architecture leveraging
+            Kubernetes for deployment and operational management, integrating
+            RabbitMQ for interservice communication, and implementing user
+            authentication for secure file access.
+          </li>
+        </ul>
+        <h4>
+          Exercise Classifier (India,
+          Pune November, 2022)
+        </h4>
+        <p>
+            Title: Building an Exercise Classifier based on a Fitness Tracker
+        </p>
+        <ul>
+          <li>
+            Designed a robust data pipeline for fitness tracker data,
+            incorporating advanced pre-processing techniques (cleaning, merging,
+            resampling), multiple outlier detection methods (IQR, Local Outlier
+            Factor, Chauvenet's criterion), and sophisticated feature
+            engineering (Butterworth's low-pass filter, PCA, Fourier
+            Transformation).
+          </li>
+          <li>
+            Implemented "Forward Selection" for feature optimization and trained
+            multiple machine learning models (Random Forest, ANN, Naïve Bayes,
+            Decision Tree, KNN) for exercise type classification, achieving 98%
+            accuracy with Random Forest on unseen data.
+          </li>
+        </ul>
+      </div>
+      <div class="section">
+        <h2>TECHNICAL PAPER</h2>
+        <ul>
+          <li>
+            Kulkarni, S., (2023), A Review on Automatic Person Attribute
+            Information Extraction and Disambiguation from Unstructured text,
+            International Scientific Research Journal,
+            <span><a href="http://dx.doi.org/10.32628/CSEIT2390216">http://dx.doi.org/10.32628/CSEIT2390216</a></span>
+          </li>
+          <li>
+            Kulkarni, S., (2023), A review on prognosis of cardiovascular and
+            Pulmonary diseases using chest radiographs,Gradiva Journal,VulUME 9
+            ISSUE 5 2023
+          </li>
+        </ul>
+      </div>
+      <div class="section">
+        <h2>INTERESTS</h2>
+        <ul>
+          <li>Data Analytics</li>
+          <li>Data Engineering</li>
+          <li>
+            Data Science - Deep Learning(Object Detection), Machine Learning,
+            Large Language Models
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script src="script.js"></script>
   </body>
 </html>
